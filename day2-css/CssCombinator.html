@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* p anywhere inside div */
+        /* div p {background-color: lightblue;}  */
+        
+        /* div > h1 {color: darkcyan;} */
+        /* h6 immediate after to div  */
+        /* div + h6 { color: brown;} */
+        /* p anywhere after div */
+        /* div ~ p { color: pink} */
+        /* label, input {
+            background-color: lightgray;
+        } */
+
+        /* direct child */
+        div  > p {
+            color: coral
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Outer Most h1</h1>
+    <!-- <div class="container">
+        <h1>Hi Header inside div</h1>
+        <p>Inside div p Login Page</p>
+        <label>User name</label>
+        <input/>
+        <br>
+        <button>Reset</button>
+        <button>Submit</button>
+    </div>
+    <h6>OuterMost h6 Heading</h6>
+    <p>Outer Most p</p> -->
+    <div>
+        <h2>
+            <p>This is p inside div inside div </p>
+        </h2>
+    </div>
+    <p>This is outer p1</p>
+    <p>This is outer p2</p>
+</body>
+</html>

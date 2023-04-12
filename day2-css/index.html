@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1 {
+            color: red;
+            background-color: bisque;
+        }
+
+        div {
+            font-family: 'Impact';
+        }
+
+    </style>
+    <script>
+        const url = 'https://api.github.com/users/harshvj03'
+        const getData = async () => {
+            const data = await fetch(url);
+            const json = await data.json();
+            console.log(json);
+        }
+        getData()
+    </script>
+    <title>Day 2</title>
+</head>
+
+<body>
+    <div>
+        <h1>Day 2</h1>
+        <h1 style="color: green; background-color: aliceblue;">CSS - Cascading Style Sheets</h1>
+        <p id="para"> Languages</p>
+        <ul>
+            <li class="static">C</li>
+            <li class="static">C++</li>
+            <li class="dynamic">Java</li>
+            <li class="static">CSharp</li>
+            <li class="static">Js</li>
+
+        </ul>
+    </div>
+</body>
+
+</html>
