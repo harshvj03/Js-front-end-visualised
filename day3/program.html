@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program</title>
+</head>
+<body>
+    <div>Welcome to CSS selectors in JS</div>
+    <p id="para">Hello</p>
+    <ul>
+        <li class="static">C</li>
+        <li class="static">C++</li>
+        <li class="dynamic">Javascript</li>
+        <li class="static">java</li>
+    </ul>
+
+    <script>
+        // const div = document.getElementsByTagName("div");
+        const div = document.querySelectorAll("div");
+        console.log(div);
+        console.log(div[0].innerHTML);
+        // const p = document.getElementById('para');
+        const p = document.querySelector('#para');
+        console.log(p.innerHTML);
+
+        // const staticClasses = document.getElementsByClassName('static');
+        const staticClasses = document.querySelectorAll('.static');
+        console.log(staticClasses);
+        // const val = Object.values(staticClasses);
+        // console.log(val);
+        // val.forEach(x => {
+        //     x.innerHTML = 'HTML changes';
+        // });
+        console.log('---------Array.from-----------')
+        const aaa = Array.from(staticClasses)
+        console.log(aaa);
+        console.log('------------forEach----------------');
+        [...staticClasses].forEach(x => {
+            
+            console.log(x)
+        });
+        // staticClasses.forEach(element => {
+        //     console.log(element)
+        // });
+        console.log('--------------for in loop-------------')
+
+        console.dir(staticClasses); 
+        console.log(staticClasses);
+        staticClasses.forEach(x => console.log(x)); 
+        for(let i in staticClasses) {
+            console.log(i);
+        }
+
+        console.log('-----------for of loop----------------');
+        for(let i of staticClasses) {
+            console.log(i);
+        }
+
+        console.log(staticClasses.entries())
+        console.log('-------------for of--------------------');
+        for(let i of staticClasses.entries()) {
+            console.log(i);
+        } 
+    </script>
+</body>
+</html>
